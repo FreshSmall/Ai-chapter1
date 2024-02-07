@@ -14,3 +14,7 @@ def get_MNIST_dataloader():
     test_loader = paddle.io.DataLoader(test_dataset, batch_size=64, shuffle=False, num_workers=1, drop_last=False)
 
     return train_loader, test_loader
+
+
+if __name__ == '__main__':
+    print(paddle.vision.datasets.__all__)

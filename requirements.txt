@@ -1,3 +1,4 @@
 numpy==1.24.3
 matplotlib==3.7.1
 Pillow==9.5.0
+paddlehub==2.4.0

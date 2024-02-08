@@ -3,3 +3,4 @@ matplotlib==3.7.1
 Pillow==10.2.0
 paddlehub==2.4.0
 opencv-python==4.9.0.80
+paddlepaddle==2.4.2

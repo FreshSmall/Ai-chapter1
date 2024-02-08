@@ -7,7 +7,7 @@ import numpy as np
 
 def load_data():
     # 从文件导入数据
-    datafile = '../housing.data'
+    datafile = 'housing.data'
     data = np.fromfile(datafile, sep=' ', dtype=np.float32)
 
     # 每条数据包括14项，其中前面13项是影响因素，第14项是相应的房屋价格中位数

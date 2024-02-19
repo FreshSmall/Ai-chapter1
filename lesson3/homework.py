@@ -7,9 +7,9 @@ import matplotlib.pyplot as plt
 def test6():
     model = hub.Module(name='UGATIT_100w')
     # 结果保存在'output/'目录，可以观察可视化结果
-    result = model.style_transfer(images=[cv2.imread('test6.jpg')], visualization=True)
+    result = model.style_transfer(images=[cv2.imread('imgs/test6-1.jpg')], visualization=True)
 
-    img_ori = Image.open('test6.jpg')
+    img_ori = Image.open('imgs/test6-1.jpg')
     img = cv2.cvtColor(result[0], cv2.COLOR_BGR2RGB)
     img = Image.fromarray(img)
 
@@ -19,7 +19,7 @@ def test6():
     ax.imshow(img_ori)
     # 显示生成漫画图
     ax = fig.add_subplot(1, 2, 2)
-    # ax.imshow(img)
+    ax.imshow(img)
     plt.show()
 
 
@@ -39,4 +39,4 @@ def testLanguage():
 
 
 if __name__ == '__main__':
-    testLanguage()
+    test6()
